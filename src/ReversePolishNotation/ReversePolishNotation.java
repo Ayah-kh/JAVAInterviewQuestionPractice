@@ -14,11 +14,20 @@ public class ReversePolishNotation {
                     int b = numberStack.pop();
                     result = a * b;
                     numberStack.push(result);
+                    break;
+                default:
+                    numberStack.push(Integer.parseInt(s));
             }
 
 
         }
+        return numberStack.pop();
 
+    }
 
+    public static void main(String[] args) {
+        String[] array={"1","5","6","*","*"};
+        int evaluate = evaluate(array);
+        System.out.println("evaluate = " + evaluate);
     }
 }

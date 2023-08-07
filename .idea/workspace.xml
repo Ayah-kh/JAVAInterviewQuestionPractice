@@ -36,7 +36,7 @@
     "last_opened_file_path": "D:/ayah-labtop/Java/Code/JAVAInterviewQuestionPractice"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ReversePolishNotation">
     <configuration name="ArrayRotate.ArrayRotate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayRotate.ArrayRotate" />
       <module name="JAVAInterviewQuestionPractice" />
@@ -44,8 +44,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReversePolishNotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReversePolishNotation.ReversePolishNotation" />
+      <module name="JAVAInterviewQuestionPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ReversePolishNotation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReversePolishNotation" />
         <item itemvalue="Application.ArrayRotate.ArrayRotate" />
       </list>
     </recent_temporary>
@@ -115,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691393296557</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="First Commit">
+      <created>1691393928357</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691393928357</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
