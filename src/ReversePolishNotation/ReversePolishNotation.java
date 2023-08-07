@@ -5,7 +5,6 @@ import java.util.Stack;
 public class ReversePolishNotation {
     public static int evaluate(String[] array) {
         Stack<Integer> numberStack = new Stack<>();
-        Stack<String> operators = new Stack<>();
         int result = 0;
         for (String s : array) {
             switch (s) {
@@ -45,7 +44,11 @@ public class ReversePolishNotation {
     }
 
     public static void main(String[] args) {
-        String[] array={"1","5","6","*","*"};
+        String[] array={"4", "13", "5", "/", "+"};
+        String[] array3={"2", "1", "+", "3", "*"};
+        String[] array2={"1","5","6","*","*"};
+
+
         int evaluate = evaluate(array);
         System.out.println("evaluate = " + evaluate);
     }
