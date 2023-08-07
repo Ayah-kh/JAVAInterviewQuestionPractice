@@ -15,10 +15,29 @@ public class ReversePolishNotation {
                     result = a * b;
                     numberStack.push(result);
                     break;
+                case "/" :
+                    int c = numberStack.pop();
+                    int d = numberStack.pop();
+                    result = d / c;
+                    numberStack.push(result);
+                    break;
+                    case "+" :
+                    int e = numberStack.pop();
+                    int f = numberStack.pop();
+                    result = e + f;
+                    numberStack.push(result);
+                    break;
+                    case "-" :
+                    int g = numberStack.pop();
+                    int h = numberStack.pop();
+                    result = h - g;
+                    numberStack.push(result);
+                    break;
+
+
                 default:
                     numberStack.push(Integer.parseInt(s));
             }
-
 
         }
         return numberStack.pop();
