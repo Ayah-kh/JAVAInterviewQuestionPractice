@@ -1,3 +1,5 @@
+package ArrayRotate;
+
 import java.util.Arrays;
 
 public class ArrayRotate {
