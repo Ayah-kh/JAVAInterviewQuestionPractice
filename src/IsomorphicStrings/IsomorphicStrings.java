@@ -1,6 +1,8 @@
 package IsomorphicStrings;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class IsomorphicStrings {
@@ -13,15 +15,20 @@ public class IsomorphicStrings {
         if (uniqueCharacters1.size()!=uniqueCharacters2.size())
             return false;
 
+        ArrayList<Character> list1 = new ArrayList<>(uniqueCharacters1);
+        ArrayList<Character> list2 = new ArrayList<>(uniqueCharacters2);
 
+        String replaceString=null;
 
+        for (int i = 0; i < list1.size(); i++) {
+            replaceString = string2.replace(list2.get(i), list1.get(i));
+        }
 
-
-        return true;
+        return string1.equalsIgnoreCase(replaceString);
     }
 
     private static Set<Character> findUniqueCharacters(String str) {
-        Set<Character> uniqueChars = new HashSet<>();
+        Set<Character> uniqueChars = new LinkedHashSet<>();
         for (char c : str.toCharArray()) {
             if (!uniqueChars.contains(c)) {
                 uniqueChars.add(c);
@@ -32,5 +39,6 @@ public class IsomorphicStrings {
 
     public static void main(String[] args) {
         System.out.println("isIsomorphic(\"eff\",\"efg\") = " + isIsomorphic("eff", "efg"));
+        System.out.println("isIsomorphic(\"eff\",\"rgg\") = " + isIsomorphic("eff", "rgg"));
     }
 }
