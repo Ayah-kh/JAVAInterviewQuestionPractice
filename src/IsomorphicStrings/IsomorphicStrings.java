@@ -12,24 +12,15 @@ public class IsomorphicStrings {
         Set<Character> uniqueCharacters1 = findUniqueCharacters(string1);
         Set<Character> uniqueCharacters2 = findUniqueCharacters(string2);
 
-        System.out.println("uniqueCharacters1 = " + uniqueCharacters1);
-        System.out.println("uniqueCharacters2 = " + uniqueCharacters2);
-
         if (uniqueCharacters1.size()!=uniqueCharacters2.size())
             return false;
 
         ArrayList<Character> list1 = new ArrayList<>(uniqueCharacters1);
         ArrayList<Character> list2 = new ArrayList<>(uniqueCharacters2);
 
-        System.out.println("list1 = " + list1);
-        System.out.println("list2 = " + list2);
-
-
         for (int i = 0; i < list1.size(); i++) {
             string2 = string2.replace(list2.get(i), list1.get(i));
         }
-
-        System.out.println("replaceString = " + string2);
 
         return string1.equalsIgnoreCase(string2);
     }
