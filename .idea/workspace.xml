@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a50ca53-02f2-4ed4-b50e-ccb7896290bd" name="Changes" comment="First Commit" />
+    <list default="true" id="9a50ca53-02f2-4ed4-b50e-ccb7896290bd" name="Changes" comment="First Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IsomorphicStrings/IsomorphicStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IsomorphicStrings/IsomorphicStrings.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,13 +34,26 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/ayah-labtop/Java/Spring boot JPA/SpringBootRESTfulTutorial"
+    "last_opened_file_path": "D:/ayah-labtop/Java/Code/JAVAInterviewQuestionPractice"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ReversePolishNotation">
+  <component name="RunManager" selected="Application.IsomorphicStrings">
     <configuration name="ArrayRotate.ArrayRotate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayRotate.ArrayRotate" />
       <module name="JAVAInterviewQuestionPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsomorphicStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IsomorphicStrings.IsomorphicStrings" />
+      <module name="JAVAInterviewQuestionPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="IsomorphicStrings.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -57,6 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsomorphicStrings" />
         <item itemvalue="Application.ReversePolishNotation" />
         <item itemvalue="Application.ArrayRotate.ArrayRotate" />
       </list>
@@ -162,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691394707108</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="First Commit">
+      <created>1691924340946</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691924340946</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
