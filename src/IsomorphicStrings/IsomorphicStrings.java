@@ -42,24 +42,22 @@ public class IsomorphicStrings {
 
         HashMap<Character, Character> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
-            System.out.println("-------------");
-            System.out.println("i = " + i);
+
             char char1 = s.charAt(i);
             char char2 = t.charAt(i);
-            System.out.println("char1 = " + char1);
-            System.out.println("char2 = " + char2);
 
-            Character existedKey = getKey(map, char2);
-            System.out.println("existedKey = " + existedKey);
-            if (existedKey != null && existedKey != char1) {
+
+            Character previousKeyForValue = getKey(map, char2);
+            if (previousKeyForValue != null && previousKeyForValue != char1) {
                 return false;
             } else if (map.containsKey(char1)) {
                 if (char2 != map.get(char1))
                     return false;
             } else
                 map.put(char1, char2);
-            System.out.println("map = " + map);
         }
+        Set<Map.Entry<Character, Character>> entries = map.entrySet();
+        System.out.println("entries = " + entries);
         return true;
 
     }
@@ -77,7 +75,7 @@ public class IsomorphicStrings {
     public static void main(String[] args) {
 //        System.out.println("isIsomorphic(\"eff\",\"efg\") = " + isIsomorphic("eff", "efg"));
 //        System.out.println("isIsomorphic(\"eff\",\"rgg\") = " + isIsomorphic("eff", "rgg"));
-        System.out.println("isIsomorphic2(\"ccgg\",\"eeff\") = " + isIsomorphic2("ccgg", "eeff"));
+        System.out.println("isIsomorphic2(\"ccgg\",\"erff\") = " + isIsomorphic2("crgg", "eeff"));
 
 
     }
