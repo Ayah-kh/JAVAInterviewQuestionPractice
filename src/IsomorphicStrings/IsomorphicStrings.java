@@ -25,9 +25,7 @@ public class IsomorphicStrings {
     private static Set<Character> findUniqueCharacters(String str) {
         Set<Character> uniqueChars = new LinkedHashSet<>();
         for (char c : str.toCharArray()) {
-            if (!uniqueChars.contains(c)) {
                 uniqueChars.add(c);
-            }
         }
         return uniqueChars;
     }
@@ -39,7 +37,7 @@ public class IsomorphicStrings {
         if (s.length() != t.length())
             return false;
 
-        if (s.length()==0&& t.length()==0)
+        if (s.length()==0)
             return true;
 
         HashMap<Character,Character> map=new HashMap<>();
@@ -63,6 +61,7 @@ public class IsomorphicStrings {
             if (entry.getValue().equals(target))
                 return entry.getKey();
         }
+        return null;
     }
 
     public static void main(String[] args) {
