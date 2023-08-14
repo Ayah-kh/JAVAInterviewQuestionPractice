@@ -56,6 +56,7 @@ public class IsomorphicStrings {
             } else
                 map.put(char1, char2);
         }
+        System.out.println("map = " + map);
         Set<Map.Entry<Character, Character>> entries = map.entrySet();
         System.out.println("entries = " + entries);
         return true;
@@ -65,7 +66,6 @@ public class IsomorphicStrings {
     // a method for getting key of a target value
     private static Character getKey(HashMap<Character, Character> map, Character target) {
         for (Map.Entry<Character, Character> entry : map.entrySet()) {
-            System.out.println("entry = " + entry);
             if (entry.getValue().equals(target))
                 return entry.getKey();
         }
@@ -73,9 +73,9 @@ public class IsomorphicStrings {
     }
 
     public static void main(String[] args) {
-//        System.out.println("isIsomorphic(\"eff\",\"efg\") = " + isIsomorphic("eff", "efg"));
-//        System.out.println("isIsomorphic(\"eff\",\"rgg\") = " + isIsomorphic("eff", "rgg"));
-        System.out.println("isIsomorphic2(\"ccgg\",\"erff\") = " + isIsomorphic2("crgg", "eeff"));
+        System.out.println("isIsomorphic(\"eff\",\"efg\") = " + isIsomorphic("eff", "efg"));
+        System.out.println("isIsomorphic(\"eff\",\"rgg\") = " + isIsomorphic("eff", "rgg"));
+        System.out.println("isIsomorphic2(\"ccgg\",\"eeff\") = " + isIsomorphic2("ccgg", "eeff"));
 
 
     }
