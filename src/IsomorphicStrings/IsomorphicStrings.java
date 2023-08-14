@@ -42,14 +42,21 @@ public class IsomorphicStrings {
 
         HashMap<Character,Character> map=new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
+            System.out.println("-------------");
+            System.out.println("i = " + i);
             char c1 = s.charAt(i);
             char c2 = t.charAt(i);
+            System.out.println("c1 = " + c1);
+            System.out.println("c2 = " + c2);
 
             Character c = getKey(map, c2);
+            System.out.println("c = " + c);
             if (c != null && c != c1) {
                 return false;
-            }
-            else
+            } else if (map.containsKey(c1)) {
+                if (c2 != map.get(c1))
+                    return false;
+            } else
                 map.put(c1, c2);
         }
         return true;
@@ -58,6 +65,7 @@ public class IsomorphicStrings {
     // a method for getting key of a target value
     private static Character getKey(HashMap<Character,Character> map, Character target){
         for (Map.Entry<Character,Character> entry: map.entrySet()){
+            System.out.println("entry = " + entry);
             if (entry.getValue().equals(target))
                 return entry.getKey();
         }
@@ -66,8 +74,8 @@ public class IsomorphicStrings {
 
     public static void main(String[] args) {
 //        System.out.println("isIsomorphic(\"eff\",\"efg\") = " + isIsomorphic("eff", "efg"));
-        System.out.println("isIsomorphic(\"eff\",\"rgg\") = " + isIsomorphic("eff", "rgg"));
-        System.out.println("isIsomorphic(\"egg\",\"add\") = " + isIsomorphic("egg", "add"));
+//        System.out.println("isIsomorphic(\"eff\",\"rgg\") = " + isIsomorphic("eff", "rgg"));
+        System.out.println("isIsomorphic2(\"abcd\",\"efgh\") = " + isIsomorphic2("abbd", "efgh"));
 
 
     }
